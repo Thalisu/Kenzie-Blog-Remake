@@ -172,6 +172,68 @@ main{
     .container_header .button {
         display: none;
     }
+    .scroller {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .scroll_items_container {
+        width: 70%!important;
+        height: 50% !important;
+        padding: 0 5% !important;
+        position: relative;
+    }
+    .scroller img{
+        width: 70%!important;
+        height: 30% !important;
+        object-fit: cover;
+        object-position: 50% 30%;
+        border-radius: 0 0 25px 25px;
+    }
+    .scroll_items_container div{
+        margin: 0 !important;
+        padding: 2% 0 0 0 !important;
+        width: max-content !important;
+    }
+    .category{
+        position: absolute;
+        right: 5%;
+        top: -20px;
+        width: max-content !important;
+    }
+    .reading_time{
+        position: absolute;
+        right: 5%;
+        top: 10px;
+        width: max-content !important;
+    }
+    .scroll_items_container h2{
+        font: 700 22px "Montserrat",sans-serif !important;
+        margin: 0 0 2% 0 !important;
+        max-width: 80% !important;
+    }
+    .scroll_items_container p{
+        font: 400 16px "Montserrat",sans-serif !important;
+        line-height: 1.4;
+        margin: 0 0 2% 0 !important;
+        max-width: 80% !important;
+    }
+    .readmore{
+        margin-top: 3%;
+        padding: 10px 15px !important;
+    }
+    .readmore span{
+        font: 700 14px "Montserrat",sans-serif !important;
+    }
+    .readmore i{
+        font-size: 24px !important;
+    }
+
+
+
+
+
+
     .container_menu {
         grid-area: 1/3/1/4;
         cursor: pointer;
@@ -212,9 +274,6 @@ main{
         display: grid;
         grid-template-columns: 100% !important;
         grid-template-rows: 24rem repeat(3,12rem) !important;
-    }
-    .seen{
-        
     }
     .seen_1{
         grid-area: 1/1/2/2 !important;
@@ -261,6 +320,7 @@ main{
     display: flex;
     position: relative;
     width: 100%;
+    min-height: 320px;
     height: 65svh;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -293,7 +353,7 @@ main{
 .scroll_items_container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
     height: 100%;
     box-sizing: border-box;
     padding: 0 0 0 18%;
@@ -308,6 +368,7 @@ main{
     align-items: center;
     max-width: 100%;
     margin: 10% 0 10% 0;
+    box-sizing: border-box;
 }
 .category{
     font: 600 18px "Montserrat",sans-serif;
@@ -339,6 +400,7 @@ main{
     width: fit-content;
     padding: 10px 15px;
     transition: 0.3s;
+    box-sizing: border-box;
 }
 .readmore span{
     font: 700 18px "Montserrat",sans-serif;
